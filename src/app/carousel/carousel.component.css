@@ -1,0 +1,17 @@
+:host ::ng-deep .ant-carousel .slick-slide {
+    text-align: center;
+    height: 400px;
+    line-height: 60px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+    /* background: url('../../assets/img/carousel_1.png') no-repeat; */
+  }
+  h3 {
+    color: #fff;
+  }
+  @media screen and (max-width: 500px) {
+    :host ::ng-deep .ant-carousel .slick-slide {
+        height: 250px;
+      }
+  }
