@@ -1,7 +1,120 @@
-
-
+<div [@flyIn] >
 <div>
     <app-carousel></app-carousel>
 </div>
-
-<div>djsklf</div>
+<div class="subtitle" >
+    <div>关于我们</div>
+</div>
+<div class="underlines" >
+    <div> </div>
+</div>
+<div class="tab_1">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let data of dataes" class="col-md-4 col-sm-6 col">
+                <div class="feature">
+                    <img class="bookMark" [src]="data.markSrc">
+                    <img [src]="data.speciesSrc" alt="一体化" class="featurePic">
+                    <div class="featureInfo">
+                        <h2>{{data.info}}</h2>
+                        <p class="infoContent">{{data.intro}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subtitle" >
+    <div>关于荔康</div>
+</div>
+<div class="underlines" >
+    <div> </div>
+</div>
+<div class="tab_2">
+    <div class="container">
+        <div class="gutter-example">
+            <div nz-row [nzGutter]="8">
+                <div nz-col class="gutter-row" [nzLg]="12" [nzXs]="24">
+                    <div class="gutter-box">
+                        <p class="text-muted">荔康医疗成立于2010年，总部设在深圳，是在深圳市科创委和深圳大学科技部的大力支持下，独立自主研发的医疗服务项目平台。荔康以智能健康体检设备研发和智能慢病监管服务为主，集研发、生产、销售、售后服务于一体。</p>
+                        <button nz-button [nzType]="'primary'" [nzSize]="'large'">
+                                <span>了解更多</span>
+                        </button>
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzLg]="12" [nzXs]="24">
+                    <div class="gutter-box">
+                        <div class="subImg">
+                            <a href="javascript:"><img src="../../assets/img/home/pic1.png" class="media-object" alt=""></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div nz-row class="banner_2">
+    <div nz-col [nzSpan]="6"></div>
+    <div nz-col [nzSpan]="6">
+      <p>加入荔康医疗，即刻管理我的健康</p>
+    </div>
+    <div nz-col [nzSpan]="6"></div>
+    <div nz-col [nzSpan]="6">
+        <button nz-button [nzType]="'primary'" [nzSize]="'large'">
+            <span>注册</span>
+        </button>
+    </div>
+</div>
+<div class="subtitle" >
+        <div>产品服务</div>
+</div>
+<div class="underlines" >
+    <div> </div>
+</div>
+<div class="tab_3">
+    <div class="container">
+        <div class="gutter-example">
+            <div nz-row [nzGutter]="8">
+                <div nz-col class="gutter-row" [nzLg]="12" [nzXs]="24">
+                    <div class="gutter-box">
+                        <div class="subImg">
+                            <a href="javascript:"><img src="../../assets/img/home/pic2.png" class="media-object" alt=""></a>  
+                        </div>
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzLg]="12" [nzXs]="24">
+                    <div class="gutter-box">
+                        <p class="text-muted">荔康医疗成立于2010年，总部设在深圳，是在深圳市科创委和深圳大学科技部的大力支持下，独立自主研发的医疗服务项目平台。荔康以智能健康体检设备研发和智能慢病监管服务为主，集研发、生产、销售、售后服务于一体。</p>
+                        <button nz-button [nzType]="'primary'" [nzSize]="'large'">
+                            <span>了解更多</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subtitle" >
+        <div>新闻动态</div>
+</div>
+<div class="underlines" >
+    <div> </div>
+</div>
+<div class="tab_4">
+<div class="container">
+    <div class="row">
+        <div *ngFor="let data of mockdata" class="col-md-4 col-sm-6 col">
+            <div class="newsDetail">
+                <div class="newsImg">
+                    <img [src]='data.img' alt="">
+                </div>
+                <div class="news">
+                    <p class="newsTitle">{{data.title}}</p>
+                    <p class="newsIntro">{{data.detail}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>  
+</div>

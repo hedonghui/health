@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { flyIn } from '../animations/fly-in';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product.component.css'],
+  animations: [ flyIn ]
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent implements OnChanges {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnChanges() {
+    this.a();
   }
+  a () {
+    console.log('123');
+   }
 
 }

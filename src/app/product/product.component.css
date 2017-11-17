@@ -1,0 +1,102 @@
+.banner>img{
+   width: 100%;
+    min-width: 1200px;
+}
+.tab_1{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.titles_1{
+    padding:20px 0 ;
+    font-family: MicrosoftYaHei;
+    font-size: 45px;
+    color: #0CBB8D;
+    letter-spacing: 1.29px;
+    line-height: 50px;
+    text-align: center;
+}
+.details_1{
+    font-family: MicrosoftYaHei;
+    font-size: 22px;
+    color: #747474;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+}
+.product{
+    width: 100%;
+    min-width: 1200px;
+    padding: 50px 0;
+    position: relative;
+}
+.productPic{
+    width: 375px;
+    margin: 0 auto;
+}
+.productPic>img{
+    width: 375px;
+}
+.product ul{
+    width: 120px;
+    position: absolute;
+    text-align: center;
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    color: #282B31;
+    letter-spacing: 0.51px;
+}
+
+.weight{
+    top: 10%;
+    left: 25%;
+}
+.weight>li:first-child,.oxygen>li:first-child{
+    animation: move1 2s linear infinite;
+    -webkit-animation: move1 2s linear infinite;
+}
+.heart>li:first-child img,.fat>li:first-child img{
+    animation: move1 2s linear 1s infinite;
+    -webkit-animation: move1 2s linear 1s infinite;
+}
+.temperature>li:first-child img,.height>li:first-child img{
+    animation: move1 2s linear 1.3s infinite;
+    -webkit-animation: move1 2s linear 1.3s infinite;
+}
+@keyframes move1{
+    0% { transform:scale(1,1)}
+    25% { transform:scale(1.05,1.05)}
+    50% { transform:scale(1.1,1.1)}
+    75% {transform:scale(1.05,1.05)}
+    100% {transform:scale(1,1)}
+}
+@-webkit-keyframes move1{
+    0% { transform:scale(1,1)}
+    25% { transform:scale(1.05,1.05)}
+    50% { transform:scale(1.1,1.1)}
+    75% {transform:scale(1.05,1.05)}
+    100% {transform:scale(1,1)}
+}
+
+.oxygen{
+    top: 10%;
+    right: 25%;
+}
+.heart{
+    top: 39%;
+    left: 25%;
+}
+.temperature{
+    top:70%;
+    left: 25%;
+}
+.fat{
+    top: 39%;
+    right: 25%;
+}
+.height{
+    right: 25%;
+    top: 70%;
+}
