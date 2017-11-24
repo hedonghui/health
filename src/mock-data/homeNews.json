@@ -1,0 +1,17 @@
+{
+    "list":[{
+            "img": "../../assets/img/home/mock1.jpg",
+           "title": "助力健康升级为\"生命教练\"",
+           "detail": "近日，微康知识产权工作再传喜讯，三项发明专利：一种个人健康医疗监测系统及健康方法（专利号：201610575598.6）、一种家用监护系统及其监护方法（专利号：201610580391.8）、一种科研项目数据处理方法及系统（专利号：201610578232.4）。"
+          },
+          {
+            "img": "../../assets/img/home/mock2.jpg",
+           "title": "助力健康升级为\"生命教练\"",
+           "detail": "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have for most of us"
+          },
+          {
+            "img": "../../assets/img/home/mock3.jpg",
+           "title": "助力健康升级为\"生命教练\"",
+           "detail": "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have for most of us"
+          }]
+}
