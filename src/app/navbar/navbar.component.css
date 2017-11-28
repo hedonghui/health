@@ -61,7 +61,7 @@
   color: #0CBB8D;
 }
 .active .nav>li>a:hover,.active .nav>li>a:focus{
-  background: #ccc;
+  background: #F2F2F2;
 }
 .active .icon-bar{
   background: #0CBB8D

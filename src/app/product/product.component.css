@@ -1,16 +1,21 @@
 .banner>img{
    width: 100%;
-    min-width: 1200px;
+    min-width: 1280px;
 }
-.tab_1{
+.tab_0{
     width: 100%;
-    min-width: 1200px;
+    min-width: 1280px;
+    margin: 0 auto;  
+}
+.tab_1,.tab_2{
+    width: 100%;
+    min-width: 1280px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .titles_1{
-    padding:20px 0 ;
+    padding:50px 0 20px;
     font-family: MicrosoftYaHei;
     font-size: 45px;
     color: #0CBB8D;
@@ -28,7 +33,7 @@
 }
 .product{
     width: 100%;
-    min-width: 1200px;
+    min-width: 1280px;
     padding: 50px 0;
     position: relative;
 }
@@ -99,4 +104,37 @@
 .height{
     right: 25%;
     top: 70%;
+}
+.tabBox{
+    width:100%;
+    margin: 0 auto; 
+    background: #F8F9FA;
+    border-top: 1px solid #E7E8EA; 
+}
+.box_1,.box_3{
+    background: #FFFFFF;
+}
+.contentBox{
+    width:1280px;
+    margin: 0 auto; 
+    padding-top:100px; 
+}
+.contentBox div:first-child{
+    width: 700px;
+    float: left;
+}
+.contentBox div:last-child{
+    width: 520px;
+    float: left;
+}
+.introPic_1{
+    width: 380px;
+}
+.introPic_2{
+     width: 700px;
+    height: 410px;
+}
+.introPic_3{
+    width: 540px;
+    height: 480px;
 }
