@@ -13,6 +13,7 @@ import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app.routes.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ChangeBackgroudDirective } from './navbar/navbar.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ProductComponent,
     NewsComponent,
-    AboutComponent
+    AboutComponent,
+    ChangeBackgroudDirective
   ],
   imports: [
     BrowserModule,
