@@ -11,9 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
-import { AppRoutingModule } from './app.routes.module';
+import { AppRoutingModule } from './routes/app.routes.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeBackgroudDirective } from './navbar/navbar.directive';
+import { AddAnimationDirective } from './product/add-animation.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { ChangeBackgroudDirective } from './navbar/navbar.directive';
     ProductComponent,
     NewsComponent,
     AboutComponent,
-    ChangeBackgroudDirective
+    ChangeBackgroudDirective,
+    AddAnimationDirective
   ],
   imports: [
     BrowserModule,

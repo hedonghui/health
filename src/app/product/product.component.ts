@@ -1,14 +1,16 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
-import { flyIn } from '../animations/fly-in';
+import { Component, OnInit, OnChanges, HostBinding } from '@angular/core';
+import { slideInDownAnimation } from '../animations/routerAnimation';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
-  animations: [ flyIn ]
+  animations: [ slideInDownAnimation ]
 })
 export class ProductComponent implements OnChanges {
-
+  @HostBinding('@routeAnimation') routeAnimation = true;
+  @HostBinding('style.display')   display = 'block';
+  // @HostBinding('style.position')  position = 'absolute';
   constructor() { }
 
   ngOnChanges() {

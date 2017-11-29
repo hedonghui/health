@@ -2,5 +2,10 @@
   footer works!
 </p>
 
-<nz-back-top></nz-back-top>
+<nz-back-top [nzVisibilityHeight]="100">
+    <ng-template #nzTemplate>
+      <div class="ant-back-top-inner">UP</div>
+    </ng-template>
+</nz-back-top>
+
 

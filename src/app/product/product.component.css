@@ -110,6 +110,7 @@
     margin: 0 auto; 
     background: #F8F9FA;
     border-top: 1px solid #E7E8EA; 
+    overflow: hidden;   
 }
 .box_1,.box_3{
     background: #FFFFFF;
@@ -118,6 +119,7 @@
     width:1280px;
     margin: 0 auto; 
     padding-top:100px; 
+    transform: translateY(60%);
 }
 .contentBox div:first-child{
     width: 700px;
@@ -137,4 +139,9 @@
 .introPic_3{
     width: 540px;
     height: 480px;
+}
+.flyin{
+    transform: translateY(0);
+    transition: transform 1s ease-out;
+
 }

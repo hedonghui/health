@@ -1,6 +1,6 @@
-import { Component, OnInit, HostListener} from '@angular/core';
+import { Component, OnInit, HostListener, HostBinding} from '@angular/core';
 import { animate } from '@angular/animations';
-import { flyIn } from '../animations/fly-in';
+import { slideInDownAnimation } from '../animations/routerAnimation';
 import { HttpClient } from '@angular/common/http';
 import { AssetDataService } from './asset-data.service';
 
@@ -9,9 +9,11 @@ import { AssetDataService } from './asset-data.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   providers: [AssetDataService],
-  animations: [ flyIn ]
+  animations: [ slideInDownAnimation ]
 })
 export class HomeComponent implements OnInit {
+  @HostBinding('@routeAnimation') routeAnimation = true;
+  @HostBinding('style.display')   display = 'block';
   mockdata;
   dataes;
   constructor(private http: HttpClient, private assetData: AssetDataService) { }
