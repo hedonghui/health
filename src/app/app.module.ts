@@ -15,6 +15,8 @@ import { AppRoutingModule } from './routes/app.routes.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeBackgroudDirective } from './navbar/navbar.directive';
 import { AddAnimationDirective } from './product/add-animation.directive';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserRegisterComponent } from './user/user-register/user-register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { AddAnimationDirective } from './product/add-animation.directive';
     NewsComponent,
     AboutComponent,
     ChangeBackgroudDirective,
-    AddAnimationDirective
+    AddAnimationDirective,
+    UserLoginComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,
