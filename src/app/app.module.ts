@@ -18,6 +18,7 @@ import { AddAnimationDirective } from './product/add-animation.directive';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { FormsModule } from '@angular/forms';
+import { MobileValidatorDirective } from './user/directives/mobile-validator.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     ChangeBackgroudDirective,
     AddAnimationDirective,
     UserLoginComponent,
-    UserRegisterComponent
+    UserRegisterComponent,
+    MobileValidatorDirective
   ],
   imports: [
     BrowserModule,

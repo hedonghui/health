@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
+
 @Component({
   selector: 'app-user-login',
   templateUrl: './user-login.component.html',
@@ -10,7 +12,8 @@ export class UserLoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit() {
-    return true;
+  onSubmit(value: any, valid: boolean) {
+    console.log(value );
+    console.log(valid);
   }
 }
