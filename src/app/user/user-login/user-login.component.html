@@ -1,3 +1,28 @@
-<p>
-  user-login works!
-</p>
+<div class="container" id="login">
+  <div >
+    <h2>登陆 <small>Log In</small></h2>
+   <form (ngSubmit)="onSubmit()" #loginForm ="ngForm">
+     <div class="form-group">
+        <input type="text" class="form-control" placeholder="输入用户名" required
+         minlength="3" maxlength="12" ngModel #phone="ngModel"  name="phone">
+        <div *ngIf="phone.errors?.minlength" class="alert alert-danger">
+          用户名字数不低于2
+        </div>
+      
+     </div>
+     <div class="form-group">
+        <input type="password" class="form-control" placeholder="输入密码" required>
+     </div>
+      <div class="rememberMe">
+        <label nz-checkbox >
+          <span>下次自动登陆</span>
+        </label>
+      </div>
+   
+    <div class="form-group">
+      <input class="form-control" type="submit" value="登陆" id="submit">
+    </div>
+    
+   </form>
+  </div>
+</div>

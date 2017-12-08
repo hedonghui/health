@@ -1,0 +1,86 @@
+#login{
+    /* width: 600px; */
+    margin: 125px auto ;
+    box-sizing: border-box;
+    padding: 60px 50px;
+    background: #fff;
+}
+h2{
+    font-weight: 400;
+    font-size: 44px;
+    color: #0CBB8D;
+    margin-bottom: 50px;
+}
+input[type="text"], input[type="password"] {
+    border: none;
+    background: #EDF4F5;
+    /* width: 500px; */
+    height: 70px;
+    box-sizing: border-box;
+    padding: 18px 0 22px 36px;
+    margin: 24px 0 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #666666;
+    letter-spacing: 0.24px;
+    line-height: 30px;
+}
+.form-control:focus{
+    border: 1px solid #0CBB8D;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(12,187,141,.6);
+}
+.ng-invalid:not(form)  {
+    border: 1px solid #d33835;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(211,56,53,.6);
+  }
+.ng-pristine:not(form) {
+    border:none;
+    box-shadow: none;
+}
+:host ::ng-deep.ant-checkbox-inner{
+    width: 18px;
+    height: 18px;
+}
+:host ::ng-deep.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #0CBB8D;
+    border-color: #0CBB8D;
+    width: 18px;
+    height: 18px;
+}
+:host ::ng-deep.ant-checkbox-checked .ant-checkbox-inner:after{
+    transform: rotate(45deg) scale(1);
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    display: table;
+    width: 7px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ' ';
+    transition: all 0.1s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+:host ::ng-deep.ant-checkbox:hover .ant-checkbox-inner{
+    border-color: #0CBB8D
+}
+#submit{
+    height: 70px;
+    background: #0CBB8D;
+    color: #fff;
+    font-size: 24px;
+} 
+.rememberMe{
+    padding:30px 0 ;
+}
+.rememberMe span{
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #666666;
+    letter-spacing: 0.18px;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 600px;
+    }
+}

@@ -17,7 +17,7 @@ export const slideInDownAnimation =
       animate('0.5s ease-in')
     ]),
     transition(':leave', [
-      animate('0.8s ease-out', style({
+      animate('1s ease-out', style({
         opacity: 0,
         transform: 'translateY(100%)'
       }))

@@ -17,6 +17,7 @@ import { ChangeBackgroudDirective } from './navbar/navbar.directive';
 import { AddAnimationDirective } from './product/add-animation.directive';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
     BrowserModule,
     NgZorroAntdModule.forRoot(),
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule
   ],
