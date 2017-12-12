@@ -19,6 +19,7 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
 import { FormsModule } from '@angular/forms';
 import { MobileValidatorDirective } from './user/directives/mobile-validator.directive';
+import { UserLoginService } from './user/user-login.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,7 @@ import { MobileValidatorDirective } from './user/directives/mobile-validator.dir
     BrowserAnimationsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserLoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

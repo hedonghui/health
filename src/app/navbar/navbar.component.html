@@ -31,7 +31,7 @@
                     <a href="http://git.oschina.net/zt_zhong/CodeBe" data-toggle="dropdown" class="dropdown-toggle" target="_blank">CodeBe</a>
                 </li>
             </ul>
-            <ul  class="nav navbar-nav navbar-right">
+            <ul *ngIf="!currentUser" class="nav navbar-nav navbar-right">
                 <li routerLinkActive="active" >
                     <a routerLink="login">登陆</a>
                 </li>
@@ -39,11 +39,11 @@
                     <a routerLink="register">注册</a>
                 </li>
             </ul>
-            <ul  class="nav navbar-nav navbar-right">
+            <ul *ngIf="currentUser" class="nav navbar-nav navbar-right">
                 <li routerLinkActive="active">
                     <a routerLink="user">欢迎你：会滴</a>
                 </li>
-                <li routerLinkActive="active">
+                <li *ngIf="false" routerLinkActive="active">
                     <a routerLink="manage">管理后台</a>
                 </li>
                 <li>
