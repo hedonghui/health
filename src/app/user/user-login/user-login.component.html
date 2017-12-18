@@ -5,7 +5,7 @@
      <div class="form-group">
         <input type="text" class="form-control" placeholder="输入手机号" 
          ngModel name="phone" #phone = "ngModel" required appMobileValidator minlength="2">
-        <div [hidden]="loginForm.invalid && (!loginForm.form.hasError('appMobileValidator','phone')||phone.untouched)" class="alert alert-danger">
+        <div [hidden]=" (!loginForm.form.hasError('appMobileValidator','phone')||phone.untouched)" class="alert alert-danger">
           请输入正确的手机号
         </div>
      </div>
