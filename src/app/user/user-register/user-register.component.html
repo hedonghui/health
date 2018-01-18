@@ -1,3 +1,57 @@
-<p>
-  user-register works!
-</p>
+<form [formGroup]="registerForm">
+<div nz-row>
+  <div nz-col  [nzLg]="{ span: 18, offset: 3 }" [nzXl]="{ span: 14, offset: 5 }" [nzXs]="24" class="content">
+    <div>
+      <div>
+        <div nz-row>
+            <header nz-col [nzSpan]="12" [nzOffset]="6"><h2>注册  <span>sign up</span></h2></header>
+        </div>
+        
+        <div nz-row>
+          <div nz-col [nzSpan]="12" [nzOffset]="6" >
+              <input type="text" class="registerInput" placeholder="输入手机号" formControlName="mobile">
+          </div>
+          <div nz-col [nzSpan]="6" >
+            <p class="tips" [hidden]="registerForm.get('mobile').valid ">手机号格式错误</p>
+          </div>
+        </div>
+        <div formGroupName="passwordsGroup">
+            <div nz-row>
+                <div nz-col [nzSpan]="12" [nzOffset]="6">
+                    <input type="password" formControlName="password" class="registerInput" placeholder="输入8到10位密码">
+                </div>
+                <div nz-col [nzSpan]="6" >
+                  <p class="tips" [hidden]="!registerForm.hasError('minlength',['passwordsGroup','password'])">密码应为8~10位数字、字母、下划线组合</p>
+                </div>
+            </div>
+            <div nz-row>
+                <div nz-col [nzSpan]="12" [nzOffset]="6">
+                    <input type="password" formControlName="pconfirm" class="registerInput" placeholder="确认密码">
+                </div>
+                <div nz-col [nzSpan]="6">
+                  <p class="tips" [hidden]="!registerForm.hasError('equal','passwordsGroup')">密码不一致</p>
+                </div>
+            </div>
+        </div>
+        <div>
+          <div nz-row>
+            <div nz-col [nzSpan]="12" [nzOffset]="6">
+                <div nz-row>
+                    <div nz-col [nzSpan]="14"><input type="text" id="validatorInput" placeholder="输入验证码"></div>
+                    <div nz-col [nzSpan]="10"><div id="sendCode">发送验证码</div></div>
+                </div>
+            </div>
+            <div nz-col [nzSpan]="6">
+                <p class="tips">验证码不正确</p>
+              </div>
+              
+          </div>
+        </div>
+        <div nz-row>
+          <div nz-col [nzSpan]="12" [nzOffset]="6"><input type="button" value="下一步" id="next"></div>      
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+</form>

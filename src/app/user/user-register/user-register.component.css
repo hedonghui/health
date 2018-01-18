@@ -1,0 +1,89 @@
+.content{
+    background: #fff;
+    margin-top: 30px;
+}
+
+
+.content h2{
+    font-weight: 400;
+    font-size: 44px;
+    color: #0CBB8D;
+    margin-bottom: 50px;
+}
+.content header{
+    padding-top:55px; 
+}
+.content h2 span{
+    font-weight: 400;
+    font-family: Arial-Regular;
+    font-size: 26px;
+    color: #C4C4C4;
+}
+.registerInput{
+    width:95%;
+    height: 70px;
+    color: #666;
+    border: none;
+    font-size: 24px;
+    background: #edf4f5;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+#validatorInput{
+    width: 90%;
+    height: 70px;
+    color: #666;
+    border: none;
+    font-size: 24px;
+    background: #edf4f5;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+#sendCode{
+    width: 88%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #0CBB8D;
+    font-size: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#sendCode:hover,#next:hover{
+    background: #2dd0a5;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#next{
+    width: 95%;
+    height: 70px;
+    color: #fff;
+    background: #0CBB8D;
+    border: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.tips{
+    line-height: 70px;
+    color: red;
+}
+
+input:focus{
+    outline-color: #0CBB8D;
+}
+input::-webkit-input-placeholder {
+	font-family: PingFangSC-Regular;
+	font-size: 18px;
+	color: #C4C4C4;
+	letter-spacing: 0.18px;
+	line-height: 30px;
+}
+
+input:-ms-input-placeholder {
+	font-family: PingFangSC-Regular;
+	font-size: 18px;
+	color: #C4C4C4;
+	letter-spacing: 0.18px;
+	line-height: 30px;
+}

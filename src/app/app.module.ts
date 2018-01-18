@@ -17,7 +17,7 @@ import { ChangeBackgroudDirective } from './navbar/navbar.directive';
 import { AddAnimationDirective } from './product/add-animation.directive';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserRegisterComponent } from './user/user-register/user-register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MobileValidatorDirective } from './user/directives/mobile-validator.directive';
 import { UserLoginService } from './user/user-login.service';
 @NgModule({
@@ -42,7 +42,8 @@ import { UserLoginService } from './user/user-login.service';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [UserLoginService],
   bootstrap: [AppComponent]
