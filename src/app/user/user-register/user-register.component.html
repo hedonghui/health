@@ -51,8 +51,8 @@
             </div>
           </div>
           <div nz-row>
-            <div nz-col [nzSpan]="12" [nzOffset]="6"><input type="button" value="下一步" id="next"></div>  
-            {{registerForm.valid}}    
+            <div nz-col [nzSpan]="12" [nzOffset]="6"><input type="button" value="下一步" id="next" (click)="Next()"></div>  
+            {{registerForm.get('mobile').pending}}    
           </div>
         </div>
       </div>
